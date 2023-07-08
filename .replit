@@ -1,0 +1,16 @@
+run = "ihaskell install --stack && jupyter notebook"
+
+hidden = [
+  ".gitignore", 
+  "migrated",
+  "notebooks/.ipynb_checkpoints",
+  "jupyter_notebook_config.py"
+]
+
+[nix]
+channel = "stable-22_11"
+
+entrypoint = "README.md"
+
+[env]
+JUPYTER_CONFIG_DIR = "$REPL_HOME"
