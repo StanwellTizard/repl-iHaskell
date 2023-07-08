@@ -1,6 +1,6 @@
 run = "ihaskell install --stack && jupyter notebook --config jupyter_notebook_config.py"
 
-hidden = ["jupyter_notebook_config.py"]
+hidden = [".gitignore", "notebooks/.ipynb_checkpoints", "jupyter_notebook_config.py"]
 
 [nix]
 channel = "stable-22_11"
