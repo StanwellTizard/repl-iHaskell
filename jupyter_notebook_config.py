@@ -9,4 +9,5 @@ c.NotebookApp.tornado_settings = {
   }
 }
 c.NotebookApp.notebook_dir = "notebooks"
-c.NotebookApp.password = os.environ['NOTEBOOK_PASSWORD']
+c.NotebookApp.token = ''
+c.NotebookApp.password = ''
