@@ -1,8 +1,15 @@
-run = "ihaskell install --stack && jupyter notebook --config jupyter_notebook_config.py"
+run = "ihaskell-notebook"
 
-hidden = [".gitignore", "notebooks/.ipynb_checkpoints", "jupyter_notebook_config.py"]
+hidden = [
+  ".gitignore", 
+  "notebooks/.ipynb_checkpoints",
+  "jupyter_notebook_config.py"
+]
 
 [nix]
-channel = "stable-22_11"
+channel = "stable-23_05"
 
-entrypoint = "notebooks/Gattegno.ipynb"
+entrypoint = "README.md"
+
+[env]
+JUPYTER_CONFIG_DIR="$REPL_HOME"
