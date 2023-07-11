@@ -5,9 +5,5 @@ let ihaskell = pkgs.ihaskell.override {
     # haskellPackages.parsec
   ]); 
 }; 
-in { 
-  deps = [
-    ihaskell
-    pkgs.jq
-  ];
+in { deps = [ ihaskell ];
 }

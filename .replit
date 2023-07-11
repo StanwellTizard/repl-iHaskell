@@ -7,7 +7,7 @@ hidden = [
 ]
 
 [nix]
-channel = "stable-23_05"
+channel = "stable-22_11"
 
 entrypoint = "README.md"
 
