@@ -1,4 +1,4 @@
-run = "ihaskell-notebook"
+run = "ihaskell install --stack && jupyter notebook"
 
 hidden = [
   ".gitignore", 
@@ -13,4 +13,4 @@ channel = "stable-22_11"
 entrypoint = "README.md"
 
 [env]
-JUPYTER_CONFIG_DIR="$REPL_HOME"
+JUPYTER_CONFIG_DIR = "$REPL_HOME"
