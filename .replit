@@ -1,4 +1,4 @@
-run = "ihaskell-notebook"
+run = "ihaskell install --stack && jupyter notebook"
 
 hidden = [
   ".gitignore", 
